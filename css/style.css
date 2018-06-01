@@ -1,0 +1,68 @@
+@keyframes salto {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+}
+
+.navbar{
+  background-color: #374061;
+  height: 80px;
+  margin-bottom: 1.5em;
+}
+
+.navbar-brand img{
+  width: 50px;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #fff;
+}
+
+.navbar-right li a{
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+
+.navbar-right li:hover a:hover{
+  background: white;
+  animation: salto 1s;
+  border-radius: 2px;
+  color: #374061;
+}
+
+.amostra {
+  margin-top: 1.5em;
+  padding: 2em;
+  background-color: #374061;
+  height: 25em;
+}
+
+.bloco-sobre {
+  display: flex;
+  align-items: center;
+}
+
+.list-img{
+  width: 1140px;
+}
+
+.sobre-nos {
+  color: white;
+  width: 70%;
+}
+
+.imagem-sobre-nos img {
+  width: 150%;
+}
