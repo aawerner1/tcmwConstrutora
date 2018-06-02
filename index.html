@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>TCMW Incorporadora</title>
+    <title>TCMW Construtora</title>
     <link rel="icon" type="image/png" href="logos/hook.png" >
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav id="menu" class="navbar navbar-default navbar-static-top">
       <div class="container container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
@@ -19,10 +19,9 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Nossas Obras</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#menu">Início</a></li>
+            <li><a href="#nossos-projetos">Nossos Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
       </div>
@@ -75,6 +74,145 @@
     </div>
   </div>
 
+  <div class="container">
+    <h2 id="nossos-projetos">Nossos Projetos</h2>
+    <div class="row portfolio">
+
+      <div class="projects-block col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/port1.jpeg">
+          <div class="caption">
+            <h3>Project Husnds</h3>
+            <p>Cras justo odio, dapibus ac facilisis, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-block col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/port2.jpeg">
+          <div class="caption">
+            <h3>Project Airneos</h3>
+            <p>Cras justo odio, dapibus ac facilisis, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-block col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/port3.jpeg">
+          <div class="caption">
+            <h3>Project Airneos</h3>
+            <p>Cras justo odio, dapibus ac facilisis, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-block col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/port4.jpeg">
+          <div class="caption">
+            <h3>Project Airneos</h3>
+            <p>Cras justo odio, dapibus ac facilisis, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-block col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/port5.jpeg">
+          <div class="caption">
+            <h3>Project Airneos</h3>
+            <p>Cras justo odio, dapibus ac facilisis, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-block col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/port6.jpeg">
+          <div class="caption">
+            <h3>Project Airneos</h3>
+            <p>Cras justo odio, dapibus ac facilisis, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contato" id="contato">
+    <h2>Contato</h2>
+
+    <address class="container">
+      <h4>Amanda Werner</h4><br />
+      <strong>Telefone: </strong> (47) 9 9677-8242<br />
+      <strong>E-mail: </strong>amanda.werner@hotmail.com.br<br /><br /><br />
+    </address>
+
+    <div class="container forms">
+
+      <form>
+      <div class="formulario">
+
+        <div class="form-group">
+          <label>* Nome</label>
+          <input type="text" class="form-control" placeholder="Nome Completo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">* E-mail</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Telefone Contato</label>
+          <input type="tel" class="form-control" id="contato" placeholder="(XX) XXXX-XXXX">
+        </div>
+
+
+        <div class="form-group">
+          <label for="comment">* Comentario:</label>
+          <textarea class="form-control" rows="5" id="comment" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-default">Enviar</button>
+      </div>
+    </form>
+
+      <div id="map"></div>
+
+    </div>
+  </div>
+
+  <div class="end">
+    <footer>
+      <ul class="icones-redes-sociais">
+        <li>
+          <a href="https://github.com/aawerner1" class="git" target="_blank">
+            <img class="icon" src="img/git.svg" alt="">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/amandawerner/" target="_blank" class="in">
+            <img class="icon" src="img/in.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnF-ITVFMGtFSUj69MWxaZHlTxsIKtMMY&callback=initMap">
+ </script>
+    <script src="js/maps.js"></script>
     <script src="bootstrap/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
