@@ -15,145 +15,191 @@
     }
 }
 
-/* menu superior */
-.navbar{
-  background-color: #374061;
-  height: 80px;
-  margin-bottom: 1.5em;
-}
+  /* menu superior */
+  .navbar{
+    background-color: #374061;
+    height: 80px;
+    margin-bottom: 1.5em;
+  }
 
-.navbar-brand img{
-  width: 50px;
-}
+  .navbar-brand img{
+    width: 50px;
+  }
 
-.navbar-default .navbar-nav li a {
-  color: #fff;
-}
+  .navbar-default .navbar-nav li a {
+    color: #fff;
+  }
 
-.navbar-right li a{
-  font-size: 1.2em;
-  margin-top: 1em;
-}
+  .navbar-right li a{
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
 
 
-.navbar-right li:hover a:hover{
-  background: white;
-  animation: salto 1s;
-  border-radius: 2px;
-  color: #374061;
-}
+  .navbar-right li:hover a:hover{
+    background: white;
+    animation: salto 1s;
+    border-radius: 2px;
+    color: #374061;
+  }
 
-/* carousel */
-.list-img{
-  width: 1140px;
-}
+  /* Sobre nós */
+  .amostra {
+    margin-top: 1.5em;
+    padding: 2em;
+    background-color: #374061;
+  }
 
-/* Sobre nós */
-.amostra {
-  margin-top: 1.5em;
-  padding: 2em;
-  background-color: #374061;
-  height: 25em;
-}
+  .bloco-sobre {
+    background-color: #374061;
+    display: flex;
+    align-items: center;
+  }
 
-.bloco-sobre {
-  display: flex;
-  align-items: center;
-}
+  .sobre-nos {
+    color: white;
+    margin-top: 1.5em;
 
-.sobre-nos {
-  color: white;
-  width: 70%;
-}
+  }
 
-.imagem-sobre-nos img {
-  width: 300px;
-}
+  .imagem-sobre-nos img {
+    width: 250px;
+  }
 
-/* porfolio */
+  /* porfolio */
 
-.container h2{
-  text-align: center;
-}
+  .container h2{
+    text-align: center;
+  }
 
-.projects-block {
-  display: flex;
-  justify-content: space-between;
-}
+  .portfolio {
+    margin-top: 1.5em;
 
-.portfolio {
-  margin-top: 1.5em;
-}
 
-.thumbnail:hover {
-  -webkit-box-shadow: 4px 9px 5px 2px rgba(0,0,0,0.49);
-  -moz-box-shadow: 4px 9px 5px 2px rgba(0,0,0,0.49);
-  box-shadow: 4px 9px 5px 2px rgba(0,0,0,0.49);
-}
+  .thumbnail:hover {
+    -webkit-box-shadow: 4px 9px 5px 2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 4px 9px 5px 2px rgba(0,0,0,0.49);
+    box-shadow: 4px 9px 5px 2px rgba(0,0,0,0.49);
+  }}
 
-/* Contato */
+  /* Contato */
 
-.contato {
-  background-color: #374061;
-  height: 55em;
-}
+  .contato {
+    background-color: #374061;
+    height: 55em;
+  }
 
-.contato h2{
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-}
+  .contato h2{
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
 
-address {
-  text-align: center;
-  color: rgb(245, 196, 109);
-  margin-bottom: 5em;
-  border-bottom: 2px solid white;
-}
+  address {
+    text-align: center;
+    color: rgb(245, 196, 109);
+    border-bottom: 2px solid white;
+  }
 
-.forms {
-  display: flex;
-  justify-content: space-between;
-}
+  form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.formulario {
-  color: #fff;
-  width: 43em;
-}
+  .form-group {
+    color: #fff;
+    width: 29em;
+  }
 
-#map {
-  border: 10px solid #fff;
-  border-radius: 1em;
-  width: 30em;
-}
+  #map {
+    border: 10px solid #fff;
+    border-radius: 1em;
+    width: 20em;
+    height: 20em;
+  }
 
-/*footer */
+  /*footer */
 
-footer{
-  display: block;
-}
+  footer{
+    display: block;
+  }
 
-.icones-redes-sociais{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
+  .icones-redes-sociais{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 
-}
+  }
 
-.icones-redes-sociais a {
-  color: #374061;
-}
+  .icones-redes-sociais a {
+    color: #374061;
+  }
 
-.icones-redes-sociais img{
-  width: 50px;
-  height: 50px;
-  margin-right: 2em;
-}
+  .icones-redes-sociais img{
+    width: 50px;
+    height: 50px;
+    margin-right: 2em;
+  }
 
-.btn{
-  background-color: rgb(245, 196, 109);
-  border: none;
-  width: 40%;
+  .btn{
+    background-color: rgb(245, 196, 109);
+    border: none;
+    width: 40%;
+  }
+
+
+@media (min-width: 700px) {
+
+  .navbar-right li a{
+    font-size: 2em;
+  }
+
+    .bloco-sobre {
+      display: flex;
+      flex-direction: column;
+    }
+
+		.sobre-nos h2 {
+				font-size: 3em;
+		}
+
+    .sobre-nos p {
+      font-size: 2em;
+    }
+
+    .container h2 {
+      font-size: 4em;
+    }
+
+    .container h4,h5 {
+      font-size: 2em;
+    }
+
+    .thumbnail h3 {
+      font-size: 3em;
+    }
+
+    .thumbnail p {
+      font-size: 2em;
+    }
+
+    form {
+      font-size: 2em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contato {
+      height: 90em;
+    }
+
+    #map {
+      margin-top: 1em;
+      width: 10em;
+      height: 10em;
+    }
+
 }
