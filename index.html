@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TCMW Construtora</title>
     <link rel="icon" type="image/png" href="logos/hook.png" >
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -9,23 +10,28 @@
   </head>
   <body>
 
-    <nav id="menu" class="navbar navbar-default navbar-static-top">
+    <nav id="menu" class="navbar navbar-default ">
       <div class="container container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img src="logos/construction.png" alt="">
-          </a>
-        </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#menu">Início</a></li>
-            <li><a href="#nossos-projetos">Nossos Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div id="collapse-navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#menu">Início</a></li>
+              <li><a href="#nossos-projetos">Nossos Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <div class="container list-img">
       <div class="row">
@@ -78,7 +84,7 @@
     <h2>Nossos Projetos</h2>
     <div class="row">
 
-      <div class="col-sm-12 col-md-4 col-lg-3">
+      <div class="col-sm-12 col-md-4">
         <figure class="thumbnail">
           <img class="img-responsive" src="img/port1.jpeg">
           <figcaption class="caption">
@@ -89,7 +95,7 @@
         </figure>
       </div>
 
-      <div class="col-sm-12 col-md-4 col-lg-3">
+      <div class="col-sm-12 col-md-4">
         <figure class="thumbnail">
           <img class="img-responsive" src="img/port2.jpeg">
           <figcaption class="caption">
@@ -100,7 +106,7 @@
         </figure>
       </div>
 
-      <div class="col-sm-12 col-md-4 col-lg-3">
+      <div class="col-sm-12 col-md-4">
         <figure class="thumbnail">
           <img class="img-responsive" src="img/port3.jpeg">
           <figcaption class="caption">
@@ -111,7 +117,7 @@
         </figure>
       </div>
 
-      <div class="col-sm-12 col-md-4 col-lg-3">
+      <div class="col-sm-12 col-md-4">
         <figure class="thumbnail">
           <img class="img-responsive" src="img/port4.jpeg">
           <figcaption class="caption">
@@ -122,7 +128,7 @@
         </figure>
       </div>
 
-      <div class="col-sm-12 col-md-4 col-lg-3">
+      <div class="col-sm-12 col-md-4">
         <figure class="thumbnail">
           <img class="img-responsive" src="img/port5.jpeg">
           <figcaption class="caption">
@@ -133,7 +139,7 @@
         </figure>
       </div>
 
-      <div class="col-sm-12 col-md-4 col-lg-3">
+      <div class="col-sm-12 col-md-4">
         <figure class="thumbnail">
           <img class="img-responsive" src="img/port6.jpeg">
           <figcaption class="caption">
@@ -157,9 +163,9 @@
       <br /><br /><br />
     </address>
 
-    <div class="container forms">
+    <div class="container">
 
-      <form>
+      <form class="forms">
       <div class="formulario">
 
         <div class="form-group">
@@ -219,5 +225,6 @@
     <script src="js/maps.js"></script>
     <script src="bootstrap/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/navbar-animation.js"></script>
   </body>
 </html>

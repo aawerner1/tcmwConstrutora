@@ -18,26 +18,20 @@
   /* menu superior */
   .navbar{
     background-color: #374061;
-    height: 80px;
-    margin-bottom: 1.5em;
+    width: 100%;
   }
 
   .navbar-brand img{
-    width: 50px;
+    width: 30px;
   }
 
   .navbar-default .navbar-nav li a {
     color: #fff;
   }
 
-  .navbar-right li a{
-    font-size: 1.5em;
-    margin-top: 1em;
-  }
-
 
   .navbar-right li:hover a:hover{
-    background: white;
+    background: #fff;
     animation: salto 1s;
     border-radius: 2px;
     color: #374061;
@@ -46,24 +40,18 @@
   /* Sobre nós */
   .amostra {
     margin-top: 1.5em;
-    padding: 2em;
+    padding: 2.5em;
     background-color: #374061;
+    color: #fff;
   }
 
   .bloco-sobre {
-    background-color: #374061;
     display: flex;
     align-items: center;
   }
 
-  .sobre-nos {
-    color: white;
-    margin-top: 1.5em;
-
-  }
-
   .imagem-sobre-nos img {
-    width: 250px;
+    width: 20em;
   }
 
   /* porfolio */
@@ -86,22 +74,21 @@
 
   .contato {
     background-color: #374061;
-    height: 55em;
+    padding: 1em;
+    height: 100%;
   }
 
-  .contato h2{
+  .contato h2, address{
     color: #fff;
     text-align: center;
-    padding: 1em;
   }
 
   address {
-    text-align: center;
     color: rgb(245, 196, 109);
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
   }
 
-  form {
+  .forms {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -110,20 +97,24 @@
   .form-group {
     color: #fff;
     width: 29em;
+    text-align: center;
+  }
+
+  .btn{
+    background-color: rgb(245, 196, 109);
+    border: none;
+    width: 7em;
   }
 
   #map {
+    margin-top: 1.5em;
     border: 10px solid #fff;
-    border-radius: 1em;
+    border-radius: 50%;
     width: 20em;
     height: 20em;
   }
 
   /*footer */
-
-  footer{
-    display: block;
-  }
 
   .icones-redes-sociais{
     list-style: none;
@@ -134,72 +125,46 @@
 
   }
 
-  .icones-redes-sociais a {
-    color: #374061;
-  }
-
-  .icones-redes-sociais img{
+  .icones-redes-sociais img {
     width: 50px;
     height: 50px;
     margin-right: 2em;
   }
 
+@media (max-width: 480px) {
+
+  .nav{
+
+  }
+
+  .bloco-sobre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagem-sobre-nos img {
+    width: 150px;
+  }
+
+  .thumbnail h3 {
+    font-size: 28px;
+  }
+
+  .forms {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 20em;
+    align-items: center;
+  }
+
   .btn{
-    background-color: rgb(245, 196, 109);
-    border: none;
-    width: 40%;
+    width: 20em;
   }
 
-
-@media (min-width: 700px) {
-
-  .navbar-right li a{
-    font-size: 2em;
+  blockquote p {
+    font-size: .9em;
   }
-
-    .bloco-sobre {
-      display: flex;
-      flex-direction: column;
-    }
-
-		.sobre-nos h2 {
-				font-size: 3em;
-		}
-
-    .sobre-nos p {
-      font-size: 2em;
-    }
-
-    .container h2 {
-      font-size: 4em;
-    }
-
-    .container h4,h5 {
-      font-size: 2em;
-    }
-
-    .thumbnail h3 {
-      font-size: 3em;
-    }
-
-    .thumbnail p {
-      font-size: 2em;
-    }
-
-    form {
-      font-size: 2em;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .contato {
-      height: 90em;
-    }
-
-    #map {
-      margin-top: 1em;
-      width: 10em;
-      height: 10em;
-    }
-
 }
